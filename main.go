@@ -12,7 +12,7 @@ func (h IntHeap) Len() int {
 }
 
 func (h IntHeap) Less(i, j int) bool {
-	return h[i] > h[j] // min heap
+	return h[i] < h[j] // min heap
 }
 
 func (h IntHeap) Swap(i, j int) {
